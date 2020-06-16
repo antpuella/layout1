@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout1</title>
+
+    <style>
+
+        body {
+            margin: 0;
+        }
+        header {
+            background-color: teal;
+            padding: 1px;
+            margin: 0;
+            width: 100%;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            color: white; 
+            text-align: left;
+            font-size: 40px;
+            margin-left: 15px;
+        }
+
+        section {
+            vertical-align: center;
+        }
+
+        section > .box1 {
+            float: left;
+            width: 32%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        section > .box1:first-child, section > .box2:first-child {
+            margin-left: 20px;
+        }
+
+        section img {
+            width: 100%;
+        }
+
+        .box1::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        section > .box2 {
+            float: left;
+            width: 32%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        section h2 {
+            text-align: left;
+            margin-left:20px ;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Summer Holiday</h1>
+    </header>
+    <section>
+        <div class="box1">
+            <div class="img1">
+                <img src="./images/img_5terre.jpg" alt="">
+                <h2>5 Terre</h2>
+            </div>
+        </div>
+        
+        <div class="box1">
+            <div class="img2">
+                <img src="./images/img_corniglia.jpg" alt="">
+                <h2>Corniglia</h2>
+            </div>
+        </div>
+
+        <div class="box1">
+            <div class="img3">
+                <img src="./images/img_manarola.jpg" alt="">
+                <h2>Manarola</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="box2">
+            <div class="img1">
+                <img src="./images/img_monterosso.jpg" alt="">
+                <h2>Monterosso</h2>
+            </div>
+        </div>
+        
+        <div class="box2">
+            <div class="img2">
+                <img src="./images/img_riomaggiore.jpg" alt="">
+                <h2>Riomaggiore</h2>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="img3">
+                <img src="./images/img_vernazza.jpg" alt="">
+                <h2>Vernazza</h2>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
